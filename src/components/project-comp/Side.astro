@@ -1,0 +1,42 @@
+---
+import Adria from '../../assets/adriatic.gif'
+import Sony from '../../assets/sony.gif'
+import Vader from '../../assets/darth.gif'
+
+import Title from './Title.astro';
+import Example from './Example.astro';
+---
+
+<section class="w-full z-50 h-fit">
+    <div class="w-full h-full flex flex-col gap-5 lg:gap-12">
+        
+        <Title 
+        projectType="Side Projects"
+        />
+
+        <Example 
+        projectName="Adria"
+        projectGif={Adria}
+        projectTech="Next, Tailwind"
+        projectText="This is one of my side projects where I reimagined the appearance (without changing functionality) of one of the most famous tourism websites in Croatia. I made a few touch-ups and considered what I could do to improve it. In comparison to the original, it is now fully responsive"
+        projectLink="https://adria-green.vercel.app/"
+        />
+
+        <Example 
+        projectName="PS Intro"
+        projectGif={Sony}
+        projectTech="Next, Tailwind, CSS"
+        projectText="I created an introductory animation for Sony PlayStation. It was a fun little project to test and enhance my CSS skills."
+        projectLink="https://play-station-1.vercel.app/"
+        />
+
+        <Example 
+        projectName="Vader"
+        projectGif={Vader}
+        projectTech="Next, Tailwind, CSS"
+        projectText="To further test my CSS and drawing skills, I created a quick sketch of Darth Vader from Star Wars. It took me only 40 minutes, but I'm pleased with how it looks and functions"
+        projectLink="https://darth-vader-omega.vercel.app/"
+        />
+
+    </div>
+</section>

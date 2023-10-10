@@ -1,0 +1,42 @@
+---
+import Tetris from '../../../src/assets/tetris.gif'
+import Xlaw from '../../../src/assets/xpravnik.gif'
+import Law from '../../../src/assets/law.gif'
+
+import Example from "./Example.astro"
+import Title from './Title.astro'
+---
+
+<section class="w-full z-50 h-fit">
+    <div class="w-full h-full flex flex-col gap-5 lg:gap-12">
+
+        <Title 
+        projectType="Main Projects"
+        />
+
+        <Example 
+        projectName="Tetris"
+        projectGif={Tetris}
+        projectText="Tetris was my first full project that I created using vanilla JS. I had a lot of fun writing algorithms for it, and I approached it in a slightly different way than the typical implementation."
+        projectTech="Vanilla Javascript, Vanilla CSS"
+        projectLink="https://iris94.github.io/Tetris/"
+        />
+        
+        <Example 
+        projectName="xPravnik"
+        projectGif={Xlaw}
+        projectText="xPravnik is my latest and proudest project. It automatically writes judicial documents for you, and it works for every country in the former Yugoslavia. It's one of a kind and solves a significant problem for citizens, as they no longer need lawyers with this."
+        projectTech="Next, Tailwind, React"
+        projectLink="https://x-pravnik.vercel.app/"
+        />
+
+        <Example 
+        projectName="Succession Calc"
+        projectGif={Law}
+        projectText="The Succession Calculator is a unique combination of code and law. It automatically resolves succession matters in Bosnia and Herzegovina, eliminating the need for a lawyer."
+        projectTech="HTML, JS, CSS"
+        projectLink="https://iris94.github.io/Law-Project/"
+        />
+
+    </div>
+</section> 

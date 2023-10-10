@@ -1,0 +1,14 @@
+
+@keyframes lightGlow {
+    0%, 100% {
+    }
+    50% {
+        background-color: #ffb0a2;
+        box-shadow: 0 0 20px #efa57b;
+    }
+  }
+
+  .travel-down-glow {
+    animation: lightGlow 10s ease-in-out infinite;
+    animation-delay: calc(0.5s * var(--delay));
+  }

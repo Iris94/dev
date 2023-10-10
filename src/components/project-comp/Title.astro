@@ -1,0 +1,18 @@
+---
+const {
+    projectType
+} = Astro.props
+ 
+import Lbracket from "../Lbracket.astro";
+import Rbracket from "../Rbracket.astro";
+---
+
+
+<div class="lg:w-5/6 w-full h-1/6 flex flex-col items-center justify-between gap-1">
+    <h5 class="lg:text-2xl text-xl text-neon-shade w-full">
+        <Lbracket />
+        {projectType}
+        <Rbracket />
+    </h5>
+    <hr class="lg:w-full lg:flex hidden h-1 border-none bg-light-shade glowing-border"/>
+</div>
