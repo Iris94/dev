@@ -1,5 +1,5 @@
 ---
-import Tech from '../components/techStack/TechStack.jsx';
+import Tech from '../components/TechStack.astro';
 import Nav from '../components/Nav.astro';
 
 interface Props {
@@ -46,6 +46,20 @@ const { title } = Astro.props;
             0%          100%,
             0%          10%
         );
+    }
+
+    @keyframes lightGlow {
+    0%, 100% {
+    }
+    50% {
+        background-color: #ffb0a2;
+        box-shadow: 0 0 20px #efa57b;
+    }
+  }
+
+    .travel-down-glow {
+    animation: lightGlow 10s ease-in-out infinite;
+    animation-delay: calc(0.5s * var(--delay));
     }
 
     body {

@@ -1,0 +1,14 @@
+---
+const {techLogo, techText} = Astro.props;
+import { Icon } from "astro-icon"
+---
+
+
+<div class='flex items-center lg:justify-between'>
+    <figure
+    class='flex justify-center items-center text-light-shade'>
+    <Icon name={techLogo}
+     class="w-5"
+    /></figure>
+    <p class='text-neon-shade text-xs text-end opacity-75 lg:flex hidden'>{techText}</p>
+</div>

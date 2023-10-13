@@ -9,8 +9,7 @@ const {
 } = Astro.props
 
 import { Image } from "astro:assets";
-
-// import { SiOpenproject } from 'react-icons/si'
+import { Icon } from 'astro-icon'
 ---
 
 <a href={projectLink} target="_blank" class="lg:flex hidden w-5/6 gap-12 h-full hover:bg-box-shade hover:cursor-pointer rounded-md">
@@ -41,8 +40,11 @@ import { Image } from "astro:assets";
                 {projectTech}
             </p>
             <div class="w-1/6 flex flex-row-reverse justify-between items-end">
-                <div class="text-light-shade text-2xl">
-                   
+                <div class="text-light-shade">
+                   <Icon 
+                   class="w-7"
+                   name="ion:open-outline"
+                   />
                 </div>
             </div>
         </div>
