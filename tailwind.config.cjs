@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
       colors: {
-        'main-shade' : '#011C26',
+        'blue-shade' : '#384D59',
         'neon-shade' : '#dac3e8',
         'hover-shade' : '#F25041',
         'light-shade' : '#F28444',

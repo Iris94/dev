@@ -2,6 +2,7 @@
 import Tetris from '../../../src/assets/tetris.gif'
 import Xlaw from '../../../src/assets/xpravnik.gif'
 import Law from '../../../src/assets/law.gif'
+import Empire from '../../../src/assets/empire.gif'
 
 import Example from "./Example.astro"
 import Title from './Title.astro'
@@ -12,6 +13,14 @@ import Title from './Title.astro'
 
         <Title 
         projectType="Main Projects"
+        />
+
+        <Example 
+        projectName="Empire Shield"
+        projectGif={Empire}
+        projectText="This project is still under development. You can track its progress on this link. Currently, it only works on laptops and PCs, and I am working on the underlying algorithms and logic. It's my most ambitious project to date"
+        projectTech="Next, React, Redux"
+        projectLink="https://empire-git-main-iris94.vercel.app/"
         />
 
         <Example 
